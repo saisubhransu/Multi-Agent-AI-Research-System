@@ -23,36 +23,3 @@ An elegant, multi-agent research pipeline that automates the process of searchin
 ├── requirements.txt   # Project dependencies
 └── tools.py           # Tavily search & BeautifulSoup scraper tools
 ```
-
----
-
-## Setup & Running
-
-1. **Clone the repository:**
-   ```bash
-   git clone <your-repository-url>
-   cd MultiAgents
-   ```
-
-2. **Set up virtual environment & install dependencies:**
-   ```bash
-   python -m venv .venv
-   # Activate on Windows:
-   .venv\Scripts\activate
-   # Install packages:
-   pip install -r requirements.txt
-   ```
-
-3. **Configure Environment Variables:**
-   - Copy `.env.example` to `.env`:
-     ```bash
-     cp .env.example .env
-     ```
-   - Fill in your API keys in `.env`:
-     - `TAVILY_API_KEY` (from [Tavily](https://tavily.com))
-     - `OPENAI_API_KEY` (input your [Groq](https://console.groq.com) API key starting with `gsk_`)
-
-4. **Run the Streamlit Dashboard:**
-   ```bash
-   streamlit run app.py
-   ```
